@@ -1,5 +1,5 @@
 import React from 'react';
-import { Question, QuestionnaireAnswers } from './types';
+import { Question, QuestionnaireAnswers } from '../typing/types';
 import './Questionnaire.css';
 
 interface QuestionnaireProps {
@@ -29,7 +29,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({
       <button className="back-home-button" onClick={onBack}>
         ← Back to Home
       </button>
-      
+
       <div className="questionnaire-container">
         <div className="progress-bar">
           <div className="progress-fill" style={{ width: `${progress}%` }}></div>
@@ -37,7 +37,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({
         <p className="progress-text">
           Question {currentStep + 1} of {questions.length}
         </p>
-        
+
         <div className="question-card">
           <h2>{currentQuestion.question}</h2>
           <div className="options-container">
@@ -55,7 +55,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({
             ))}
           </div>
         </div>
-        
+
         <div className="navigation-buttons">
           <button
             className="nav-button secondary"

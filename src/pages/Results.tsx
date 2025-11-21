@@ -1,5 +1,5 @@
 import React from 'react';
-import { Certification } from './types';
+import { Certification } from '../typing/types';
 import './Results.css';
 
 interface ResultsProps {
@@ -58,7 +58,7 @@ const Results: React.FC<ResultsProps> = ({ results, onStartOver }) => {
                 >
                   💼 Apply to All {results.length} Certifications
                 </button>
-                <p className="apply-all-hint">Open all application links at once</p>
+                <p className="apply-all-hint">Apply to all applications at once</p>
               </div>
             )}
 

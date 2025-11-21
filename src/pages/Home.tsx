@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import Questionnaire from './Questionnaire';
-import { questions, QuestionnaireAnswers, Certification, initialAnswers } from './types';
+import { questions, QuestionnaireAnswers, Certification, initialAnswers } from '../typing/types';
 import Results from './Results';
 
 interface HomeProps {

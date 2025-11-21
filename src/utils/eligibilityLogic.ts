@@ -1,4 +1,4 @@
-import { QuestionnaireAnswers, Certification } from './types';
+import { QuestionnaireAnswers, Certification } from '../typing/types';
 
 export const calculateEligibility = (answers: QuestionnaireAnswers): Certification[] => {
   const eligible: Certification[] = [];
@@ -13,7 +13,7 @@ export const calculateEligibility = (answers: QuestionnaireAnswers): Certificati
     const isEDWOSB =
       answers.personalNetWorth === 'Less than $750,000' ||
       answers.personalNetWorth === '$750,000 - $850,000';
-    
+
     eligible.push({
       name: isEDWOSB ? 'EDWOSB (Economically Disadvantaged Women-Owned Small Business)' : 'WOSB (Women-Owned Small Business)',
       type: 'Federal',

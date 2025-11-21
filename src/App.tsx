@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Home from './Home';
-import NotFound from './NotFound';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 function App() {
   const [view, setView] = useState<'home' | 'questionnaire' | 'notfound'>(() => {
