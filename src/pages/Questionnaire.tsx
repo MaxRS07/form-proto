@@ -27,7 +27,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({
   return (
     <div className="questionnaire-page">
       <button className="back-home-button" onClick={onBack}>
-        ← Back to Home
+        Back to Home
       </button>
 
       <div className="questionnaire-container">
