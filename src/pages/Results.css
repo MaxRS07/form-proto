@@ -5,12 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f5f5f5;
 }
 
 .results-container {
   background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.18);
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 48px 32px;
   max-width: 1100px;
   width: 100%;
@@ -18,14 +19,17 @@
   flex-direction: column;
   align-items: stretch;
   gap: 32px;
+  border-top: 4px solid #0066cc;
 }
 
 h1 {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 700;
-  color: #667eea;
+  color: #0066cc;
   margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .results-intro {
@@ -36,63 +40,62 @@ h1 {
 }
 
 .apply-all-section {
-  background: linear-gradient(135deg, #667eea15, #764ba215);
-  border: 2px solid #667eea;
-  border-radius: 14px;
+  background: #e6f2ff;
+  border: 2px solid #0066cc;
+  border-radius: 2px;
   padding: 24px;
   text-align: center;
   margin-bottom: 32px;
 }
 
 .apply-all-button {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #0066cc;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 16px 32px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: box-shadow 0.18s, transform 0.18s;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .apply-all-button:hover {
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
-  transform: translateY(-2px) scale(1.05);
+  background: #0052a3;
 }
 
 .apply-all-hint {
-  color: #667eea;
+  color: #0066cc;
   font-size: 0.95rem;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 28px;
+  gap: 20px;
   margin-bottom: 24px;
 }
 
 .certification-card {
-  background: linear-gradient(180deg, #f7f9ff 0%, #fff 100%);
-  border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(102, 126, 234, 0.10);
-  border: 1px solid rgba(102, 126, 234, 0.10);
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #0066cc;
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
   gap: 18px;
-  transition: transform 0.18s, box-shadow 0.18s;
+  transition: box-shadow 0.2s;
 }
 
 .certification-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 12px 36px rgba(102, 126, 234, 0.18);
-  border-color: #667eea33;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cert-header {
@@ -102,11 +105,12 @@ h1 {
 }
 
 .cert-type {
-  font-size: 0.95rem;
-  color: #764ba2;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  color: #0066cc;
+  font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 2px;
+  text-transform: uppercase;
 }
 
 .cert-header h3 {
@@ -117,22 +121,27 @@ h1 {
 }
 
 .cert-description {
-  color: #444;
+  color: #333;
   font-size: 1rem;
   margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 .cert-benefits {
-  background: #f7f9ff;
-  border-radius: 10px;
+  background: #fafafa;
+  border-radius: 2px;
   padding: 12px 16px;
   margin-bottom: 8px;
+  border-left: 3px solid #0066cc;
 }
 
 .cert-benefits h4 {
   font-size: 1rem;
-  color: #667eea;
+  color: #0066cc;
   margin-bottom: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .cert-benefits ul {
@@ -140,41 +149,47 @@ h1 {
   padding-left: 18px;
   color: #333;
   font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .apply-button {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #0066cc;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 2px;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: box-shadow 0.18s, transform 0.18s;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.12);
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .apply-button:hover {
-  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.18);
-  transform: translateY(-2px) scale(1.04);
+  background: #0052a3;
 }
 
 .next-steps, .strategic-tips {
-  background: #f7f9ff;
-  border-radius: 14px;
+  background: #fafafa;
+  border-radius: 2px;
   padding: 24px 20px;
   margin-bottom: 12px;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #0066cc;
 }
 
 .next-steps h3, .strategic-tips h3 {
-  color: #764ba2;
+  color: #0066cc;
   font-size: 1.1rem;
   margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .next-steps ol {
@@ -182,6 +197,7 @@ h1 {
   padding-left: 22px;
   color: #333;
   font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .tips-grid {
@@ -192,13 +208,14 @@ h1 {
 
 .tip-card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 16px 12px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  border-left: 3px solid #0066cc;
 }
 
 .tip-icon {
@@ -208,22 +225,23 @@ h1 {
 
 .start-over-button {
   background: #fff;
-  color: #667eea;
-  border: 2px solid #667eea;
-  border-radius: 8px;
+  color: #0066cc;
+  border: 2px solid #0066cc;
+  border-radius: 2px;
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   margin: 0 auto;
   display: block;
-  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .start-over-button:hover {
-  background: #f7f9ff;
-  color: #764ba2;
-  border-color: #764ba2;
+  background: #0066cc;
+  color: white;
 }
 
 .no-results {
@@ -237,17 +255,19 @@ h1 {
 }
 
 .help-box {
-  background: #f7f9ff;
-  border-radius: 10px;
+  background: #e6f2ff;
+  border-radius: 2px;
   padding: 18px 14px;
   margin-top: 18px;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #0066cc;
 }
 
 .contact-info {
-  color: #667eea;
+  color: #0066cc;
   font-size: 1.05rem;
   margin-top: 8px;
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {

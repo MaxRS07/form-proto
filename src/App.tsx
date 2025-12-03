@@ -64,6 +64,7 @@ function App() {
           </a>
           <div className="nav-links">
             <a href="/" className="nav-link" onClick={(e) => { e.preventDefault(); navigateTo('home'); }}>About</a>
+            <a href="/eligibility" className="nav-link" onClick={(e) => { e.preventDefault(); navigateTo('questionnaire'); }}>Eligibility</a>
             <a href="/apply" className="nav-link" onClick={(e) => { e.preventDefault(); navigateTo('apply'); }}>Certifications</a>
             <a href="/status" className="nav-link" onClick={(e) => { e.preventDefault(); navigateTo('status'); }}>Resources</a>
             <button className="nav-button" onClick={() => navigateTo('apply')}>Contact Us</button>

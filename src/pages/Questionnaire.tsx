@@ -12,6 +12,64 @@ interface QuestionnaireProps {
   onBack: () => void;
 }
 
+const IntroScreen: React.FC<{ onStart: () => void; onViewResults: () => void; onBack: () => void }> = ({
+  onStart,
+  onViewResults,
+  onBack,
+}) => {
+  return (
+    <div className="questionnaire-page">
+      <button className="back-home-button" onClick={onBack}>
+        Back to Home
+      </button>
+
+      <div className="questionnaire-container intro-container">
+        <div className="intro-content">
+          <h1 className="intro-title">Business Certification Eligibility Questionnaire</h1>
+          <p className="intro-description">
+            This questionnaire will help determine which business certifications you may qualify for.
+            Answer a series of questions about your business to discover federal, state, local, and
+            private sector certification opportunities.
+          </p>
+
+          <div className="intro-details">
+            <div className="detail-item">
+              <span className="detail-icon">📋</span>
+              <div>
+                <strong>14 Questions</strong>
+                <p>About your business ownership, size, and demographics</p>
+              </div>
+            </div>
+            <div className="detail-item">
+              <span className="detail-icon">⏱️</span>
+              <div>
+                <strong>5 Minutes</strong>
+                <p>Quick and easy to complete</p>
+              </div>
+            </div>
+            <div className="detail-item">
+              <span className="detail-icon">🎯</span>
+              <div>
+                <strong>Personalized Results</strong>
+                <p>Get a customized list of certifications you qualify for</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="intro-buttons">
+            <button className="nav-button primary large" onClick={onStart}>
+              Start Questionnaire
+            </button>
+            <button className="nav-button secondary large" onClick={onViewResults}>
+              See Past Results
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Questionnaire: React.FC<QuestionnaireProps> = ({
   currentStep,
   questions,
@@ -21,6 +79,21 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({
   onPrev,
   onBack,
 }) => {
+  const [showIntro, setShowIntro] = React.useState(true);
+
+  const handleStart = () => {
+    setShowIntro(false);
+  };
+
+  const handleViewResults = () => {
+    // Placeholder for future functionality
+    alert('Past results functionality coming soon!');
+  };
+
+  if (showIntro) {
+    return <IntroScreen onStart={handleStart} onViewResults={handleViewResults} onBack={onBack} />;
+  }
+
   const currentQuestion = questions[currentStep];
   const progress = ((currentStep + 1) / questions.length) * 100;
 

@@ -235,7 +235,7 @@
 }
 
 .action-button.primary {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #0066cc;
   color: white;
   box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
 }
@@ -328,7 +328,7 @@
 }
 
 .action-link.primary {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #0066cc;
   color: white;
   border: none;
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
