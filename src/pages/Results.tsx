@@ -51,14 +51,12 @@ const Results: React.FC<ResultsProps> = ({ results, onStartOver }) => {
                 <button
                   className="apply-all-button"
                   onClick={() => {
-                    results.forEach(cert => {
-                      window.open(cert.applicationLink, '_blank');
-                    });
+                    window.location.assign("/apply");
                   }}
                 >
                   💼 Apply to All {results.length} Certifications
                 </button>
-                <p className="apply-all-hint">Apply to all applications at once</p>
+                <p className="apply-all-hint">Apply for all certifications in one form</p>
               </div>
             )}
 
@@ -151,7 +149,7 @@ const Results: React.FC<ResultsProps> = ({ results, onStartOver }) => {
         )}
 
         <button className="start-over-button" onClick={onStartOver}>
-          ← Start Over
+          Start Over
         </button>
       </div>
     </div>

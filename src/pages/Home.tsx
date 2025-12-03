@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Questionnaire from './Questionnaire';
 import { questions, QuestionnaireAnswers, Certification, initialAnswers } from '../typing/types';
